@@ -1,0 +1,42 @@
+basic:
+    name: cnn.com
+    environments:
+        production: 'https://cnn.com'
+        staging: ''
+        development: ''
+    breakpoints:
+        - 375
+        - 640
+        - 720
+        - 1200
+        - 1280
+        - 1920
+    pages:
+        - /
+        - /us
+        - /world
+    monitoring:
+        days: {  }
+        type: daily
+        schedule_time: '09:00 AM'
+        schedule_time_zone: America/Los_Angeles
+        compare_with: last-production
+        compare_with_fresh: production
+advanced:
+    mask: ''
+    remove: ''
+    isolate: ''
+    delay: 10
+    scroll: false
+    headers:
+        - { header: '', value: '' }
+    cookies: ''
+    custom_js: ''
+    custom_css: ''
+    mock_content: ''
+    performance:
+        workers_production: 30
+        workers_nonproduction: 10
+        workers_production_delay: 0
+        workers_nonproduction_delay: 0
+    stabilize: true

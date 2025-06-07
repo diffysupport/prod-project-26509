@@ -7,7 +7,7 @@ basic:
     basicAuth:
         production: { user: '', password: '' }
         staging: { user: '', password: '' }
-        development: null
+        development: { user: '', password: '' }
     breakpoints:
         - 375
         - 640
@@ -21,7 +21,7 @@ basic:
         - /world
     monitoring:
         days: {  }
-        type: daily
+        type: ''
         schedule_time: '09:00 AM'
         schedule_time_zone: America/Los_Angeles
         compare_with: last-production
@@ -29,18 +29,30 @@ basic:
 advanced:
     mask: ''
     remove: ''
-    delay: 10
+    delay: 0
     scroll: false
     headers:
         - { header: '', value: '' }
     cookies: ''
     custom_js: ''
     custom_css: ''
-    mock_content: ''
+    mock_content:
+        - { selector: '', type: title }
     sensitivity: 15
     night_mode: false
     retina_images: false
     single_ip: false
+    login:
+        type: none
+        click_element: false
+        click_element_selector: ''
+        login_url: ''
+        username: ''
+        password: ''
+        username_selector: ''
+        password_selector: ''
+        submit_selector: ''
+        after_login_selector: ''
     performance:
         workers_production: 30
         workers_nonproduction: 10

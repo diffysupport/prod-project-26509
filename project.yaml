@@ -8,11 +8,12 @@ basic:
         - 375
         - 640
         - 720
-        - 1200
+        - 1400
     pages:
         - /
         - /us
         - /world
+        - /about
     monitoring:
         days: {  }
         type: ''
